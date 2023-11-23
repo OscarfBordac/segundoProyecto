@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro de médicos</title>
+  <link rel="stylesheet" href="stylesheets\style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Formulario de registro de médicos</h1>
+
+    </header>
+
+    <form id="registro-medicos-form" method="post" action="/agregar-medico" >
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" name="nombres" id="nombres" placeholder="Nombres" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+        </div>
+      </div>
+      <input type="text" name="cedula" id= "cedula"placeholder="Número de cédula" required>
+      <input type="text" name="consultorio" id="consultorio" placeholder="Número de consultorio" required>
+      <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
+      <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="especialidad"><b>- - Seleccione su especialidad  - - </b></label>
+          <select name="especialidad" id="especialidad" required>
+            <option value="medicina_general">Medicina general</option>
+            <option value="cardiologia">Cardiología</option>
+            <option value="medicina_interna">Medicina interna</option>
+            <option value="dermatologia">Dermatología</option>
+            <option value="rehabilitacion_fisica">Rehabilitación física</option>
+            <option value="psicologia">Psicología</option>
+            <option value="odontologia">Odontología</option>
+            <option value="radiologia">Radiología</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="Registrar">
+    </form>
+    <br>
+    <form action="index.html">
+        <input type="submit" value="Regresar a la página principal">
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

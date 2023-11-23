@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro de pacientes</title>
+  <link rel="stylesheet" href="stylesheets\style.css">
+</head>
+<body>
+  <div class="container">
+
+
+    <header>
+      <h1>Formulario de registro de pacientes</h1>
+
+    </header>
+
+    <form method="post" action="/agregar-paciente">
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" name="nombres"  id="nombres" placeholder="Nombres" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+        </div>
+      </div>
+      <input type="text" name="cedula" id= "cedula" placeholder="Número de cédula" required>
+      <label for="fecha_nacimiento" style="text-align: left;">Fecha de nacimiento:</label>
+
+      <!-- Campo de fecha con el formato "dd/mm/aa" como marcador -->
+      <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="dd/mm/aa" required>
+    
+      <input type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
+      <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+
+      <input type="submit" value="Registrar">
+    </form>
+    <br>
+    <form action="index.html">
+        <input type="submit" value="Regresar a la página principal">
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

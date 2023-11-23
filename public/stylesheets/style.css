@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-image: url('https://img.freepik.com/vector-gratis/medico-sanitario-color-azul_1017-26807.jpg?w=2000'); /* Ruta de la imagen de fondo */
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+
+h1 {
+  background-color: #000;
+  color: #fff;
+  font-size: 29px;
+  margin: 0;
+  padding: 20px;
+  width: 97%; 
+  text-align: center;
+
+}
+
+form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh; /* Centrar verticalmente en la pantalla */
+width: 500px;
+margin: 0 auto;
+}
+
+label {
+font-size: 16px; /* Tamaño de fuente */
+color: #333; /* Color de texto */
+text-align: center; /* Centrar el texto */
+display: block; /* Hacer que el label sea un bloque para centrarlo */
+margin-bottom: 1px; /* Espacio inferior para separar el label del elemento de entrada */
+}
+
+.cuadro-delimitador {
+border: 2px solid #333;
+padding: 2px;
+margin: 8px;
+
+}
+
+.imagen-derecha {
+text-align: right; /* Alinea el contenido a la derecha */
+}

@@ -1,0 +1,39 @@
+    <header><h1>Centro Medico</h1></header>
+    <main class="tabla-container">
+        <table  border="solid" >
+            <h2>LISTADO DE MEDICOS</h2>
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Número de Cédula</th>
+                    <th>Consultorio</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Especialidad</th>
+                    
+                </tr>
+            </thead>
+
+            <tbody >
+                <!-- Se agrega el contenido dinamicamente por medio de handlebars -->
+                {{#each resultado}}
+                <tr>
+                    <td>{{nombres}}</td>
+                    <td>{{apellidos}}</td>
+                    <td>{{cedula}}</td>
+                    <td>{{consultorio}}</td>
+                    <td>{{telefono}}</td>
+                    <td>{{correo}}</td>
+                    <td>{{especialidad}} </td>
+                    
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </main>
+
+    <br>
+    <form action="index.html">
+        <input type="submit" value="Regresar a la página principal">
+    </form>

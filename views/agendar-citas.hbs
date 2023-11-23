@@ -1,0 +1,29 @@
+<header>
+      <h1>Centro Medico Backend</h1>
+
+    </header>
+    <h2>Agendamiento de citas</h2>
+    <form method="post" action="/agregar-cita" >
+      <label for="cedula" style="text-align: left;">Numero de cedula:</label>
+      <input type="text" name="cedula" id= "cedula" placeholder="Número de cédula" required>
+      <label for="fecha_cita" style="text-align: left;">Fecha de la cita:</label>
+      <input type="date" name="fecha_cita" id="fecha_cita" placeholder="fecha_cita" required>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="medico"><b>- -Especilista - - </b></label>
+          <br>
+          <select name="medico" id="medico" required>
+            {{#each resultado}}
+                 <option value="">--Seleccione una medico--</option>
+                 <option value="{{cedula}}">{{nombres}}  {{apellidos}}</option>
+            {{/each}}
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="Registrar">
+    </form>
+    <br>
+    <form action="index.html">
+        <input type="submit" value="Regresar a la página principal">
+    </form>
+  </div>
